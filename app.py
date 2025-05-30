@@ -44,7 +44,7 @@ remove_files(7)
 
 
 st.title("Reconocimiento Óptico de Caracteres")
-st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo")
+st.subheader("Este robot amigo es capaz de reconocer texto en imagenes! Muéstrale la imagen que quieras que lea, y te dirá lo que dice en texto.")
 image = Image.open('Clank.png')
 st.image(image, width=350)
 
