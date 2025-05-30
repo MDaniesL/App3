@@ -45,7 +45,7 @@ remove_files(7)
 
 st.title("Reconocimiento Óptico de Caracteres")
 st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo")
-image = Image.open('Bayonetta_1_SSBU.png')
+image = Image.open('Clank.png')
 st.image(image, width=350)
 
 
