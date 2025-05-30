@@ -105,7 +105,7 @@ with st.sidebar:
       #text = st.text_input("Enter text")
       in_lang = st.selectbox(
           "Seleccione el lenguaje de entrada",
-          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
+          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones", "Slovak", "Arabe"),
       )
       if in_lang == "Ingles":
           input_language = "en"
@@ -118,11 +118,15 @@ with st.sidebar:
       elif in_lang == "Mandarin":
           input_language = "zh-cn"
       elif in_lang == "Japones":
-          input_language = "ja"
+          input_language = "ja"      
+      elif in_lang == "Slovak":
+          input_language = "sk"
+      elif in_lang == "Arabe":
+          input_language = "ar"
       
       out_lang = st.selectbox(
           "Select your output language",
-          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
+          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones", "Slovak", "Arabe"),
       )
       if out_lang == "Ingles":
           output_language = "en"
@@ -135,7 +139,11 @@ with st.sidebar:
       elif out_lang == "Chinese":
           output_language = "zh-cn"
       elif out_lang == "Japones":
-          output_language = "ja"
+          output_language = "ar"
+      elif in_lang == "Slovak":
+          input_language = "sk"
+      elif in_lang == "Arabe":
+          input_language = "ar"
       
       english_accent = st.selectbox(
           "Seleccione el acento",
